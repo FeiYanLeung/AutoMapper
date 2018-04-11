@@ -18,6 +18,9 @@
     <PackageProjectUrl>http://automapper.org</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/AutoMapper/AutoMapper/blob/master/LICENSE.txt</PackageLicenseUrl>
     <LangVersion>latest</LangVersion>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.1' Or '$(TargetFramework)' == 'netstandard1.3' ">

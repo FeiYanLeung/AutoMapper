@@ -96,7 +96,7 @@ namespace AutoMapper.Configuration
             PropertyMapActions.Add(pm =>
             {
                 Expression<Func<TSource, TDestination, TMember, ResolutionContext, TResult>> expr = (src, dest, destMember, ctxt) => resolver(src, dest);
-
+                pm.Ignored = false;
                 pm.CustomResolver = expr;
             });
         }
@@ -106,7 +106,7 @@ namespace AutoMapper.Configuration
             PropertyMapActions.Add(pm =>
             {
                 Expression<Func<TSource, TDestination, TMember, ResolutionContext, TResult>> expr = (src, dest, destMember, ctxt) => resolver(src, dest, destMember);
-
+                pm.Ignored = false;
                 pm.CustomResolver = expr;
             });
         }
@@ -116,7 +116,7 @@ namespace AutoMapper.Configuration
             PropertyMapActions.Add(pm =>
             {
                 Expression<Func<TSource, TDestination, TMember, ResolutionContext, TResult>> expr = (src, dest, destMember, ctxt) => resolver(src, dest, destMember, ctxt);
-
+                pm.Ignored = false;
                 pm.CustomResolver = expr;
             });
         }
